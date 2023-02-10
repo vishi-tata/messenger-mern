@@ -50,6 +50,19 @@ const Chat = () => {
           </span>
         </p>
       </div>
+
+      <div className={classes.chat__footer}>
+        <IconButton>
+          <InsertEmoticon className={classes["MuiSvgIcon-root"]} />
+        </IconButton>
+        <form>
+          <input type="text" placeholder="Type a message" />
+          <button>Send a message</button>
+        </form>
+        <IconButton>
+          <Mic className={classes["MuiSvgIcon-root"]} />
+        </IconButton>
+      </div>
     </div>
   );
 };
