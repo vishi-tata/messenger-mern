@@ -1,5 +1,4 @@
 import { Avatar } from "@mui/material";
-import { Fragment } from "react";
 
 import classes from "./SidebarChat.module.css";
 
