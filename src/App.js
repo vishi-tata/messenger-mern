@@ -13,7 +13,7 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       const res = await axios.get('/messages/sync');
-      if (res.statusText !== 'OK') {
+      if (res.status !== 200) {
         throw new Error('error while fetching data')
       }
       setMessages(res.data);
@@ -42,7 +42,7 @@ function App() {
     }
   }, []);
 
-
+  console.log(messages)
 
   return (
     <div className="app">
